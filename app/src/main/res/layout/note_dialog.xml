@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/student_dialog_title"
+        android:textStyle="normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/lbl_new_student_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lbl_new_note_title"/>
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:gravity="top"
+        android:hint="@string/hint_enter_student"
+        android:inputType="textCapSentences|textMultiLine"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/input_new_note" />
+
+    <EditText
+        android:id="@+id/student_grade"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:hint="Numerical Grade"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
